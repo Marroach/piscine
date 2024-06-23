@@ -28,18 +28,18 @@ char	*ft_strstr(char *str, char *to_find)
 		i++;
 		j = 0;
 	}
-	return 0;
+	return (0);
 }
 
-#include <stdio.h>
-int main() {
-    char str[] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit";
-    char find[] = "sit";
-    char *result = ft_strstr(str, find);
-    if (result) {
-        printf("Found: %s\n", result);
-    } else {
-        printf("Not found\n");
-    }
-    return 0;
-}
+// #include <stdio.h>
+// int main() {
+//     char str[] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit";
+//     char find[] = "sit";
+//     char *result = ft_strstr(str, find);
+//     if (result) {
+//         printf("found");
+//     } else {
+//         printf("error\n");
+//     }
+//     return 0;
+// }
