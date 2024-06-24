@@ -1,30 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marsaldana <marsaldana@student.42.fr>      +#+  +:+       +#+        */
+/*   By: marisald <marisald@student.42.fr>          #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/19 21:01:21 by marsaldana        #+#    #+#             */
-/*   Updated: 2024/06/19 21:06:48 by marsaldana       ###   ########.fr       */
+/*   Created: 2024-06-24 07:36:16 by marisald          #+#    #+#             */
+/*   Updated: 2024-06-24 07:36:16 by marisald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-int ft_strlen(char *str)
+int ft_recursive_factorial(int nb)
 {
-    int i = 0;
-
-    while(str[i])
-    {
-        i++;
-    
-    } 
-    return (i);
+	if(nb < 0)
+	{
+		return (0);	
+	}
+	else if (nb == 0 || nb == 1)
+	{
+		return (1);
+	}
+	else 
+	{
+	return	nb * ft_recursive_factorial(nb -1);
+	}
 }
 
 // #include <stdio.h>
-
-// int main (void)
+// int main ()
 // {
-// 	printf("%i", ft_strlen("123456789"));
+// int nb = 6;
+// printf ("%d", ft_recursive_factorial(nb));
 // }
